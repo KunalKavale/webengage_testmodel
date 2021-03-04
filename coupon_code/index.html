@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+	<header>
+		<ul class="menu-bar">
+			<li><a href="javascript:;"><img src="assets/img/chrome-icon.png" alt="" width="16px" height="16px"></a></li>
+			<li><a href="javascript:;">Tour</a></li>
+			<li><a href="javascript:;">Product</a></li>
+			<li><a href="javascript:;">Features</a></li>
+			<li><a href="javascript:;">Enterprise</a></li>
+			<li><a href="javascript:;">Support</a></li>
+			<li><a href="javascript:;">Pricing</a></li>
+			<li><a href="javascript:;">Cart</a></li>
+		</ul>
+		<div class="humburger-icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="hamburger-menu">
+			<ul class="hamburger-menubar">
+				<li><a href="javascript:;">Tour</a></li>
+				<li><a href="javascript:;">Product</a></li>
+				<li><a href="javascript:;">Features</a></li>
+				<li><a href="javascript:;">Enterprise</a></li>
+				<li><a href="javascript:;">Support</a></li>
+				<li><a href="javascript:;">Pricing</a></li>
+				<li><a href="javascript:;">Cart</a></li>
+			</ul>
+			<div class="close-hamburger">
+				<img src="assets/img/close.png" alt="" width="16" height="16">
+			</div>
+		</div>
+	</header>
+	<main>
+		<h1>Punny headline</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+		<div class="coming-soon">Coming Soon</div>
+		<form>
+			<div class="form-group">
+				<label>First Name:</label>
+				<input type="text" id="fname" name="fname" placeholder="First Name">
+			</div>
+			<div class="form-group">
+				<label>Last Name:</label>
+				<input type="text" id="lname" name="lname" placeholder="Last Name">
+			</div>
+			<div class="form-group">
+				<label>Email Address:</label>
+				<input type="email" id="email" name="email" placeholder="Enter email">
+			</div>
+			<div class="form-group">
+				<label>Phone:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone">
+			</div>
+			<div class="form-group radio">
+				<input type="radio"0 id="male" name="gender" value="male">
+  				<label for="male">Male</label>
+  				<input type="radio" id="female" name="gender" value="female">
+  				<label for="female">Female</label>
+			</div>
+			<div class="form-group birthdate">
+				<label>Birthdate</label>
+				<input type="date" id="birthday" name="birthday">
+			</div>
+			<input type="submit" value="Submit">
+		</form> 
+		<div class="pop-up">
+			<h1>More Deals For You!</h1>
+			<h2>More discounts for yor flight</h2>
+			<div class="coupon-code">
+				<ul class="offers-code">
+					<li id="li1">
+						<h3>Flat</h3>
+						<h2>Rs 500 <span>off</span></h2>
+						<p id="p1">MMTFLAT500</p>
+						<h4>*Valid On Min 3 Ticket Booking</h4>
+						<button onclick="copyToClipboard('#li1')" data-text-swap="CODE COPIED" name="button">COPY CODE</button>
+					</li>
+					<li id="li2">
+						<h3>Flat</h3>
+						<h2>Rs 300 <span>off</span></h2>
+						<p id="p2">FLYMMT300</p>
+						<h4>*Valid On Min 2 Ticket Booking</h4>
+						<button onclick="copyToClipboard('#li2')" data-text-swap="CODE COPIED" name="button">COPY CODE</button>
+					</li>
+					<li id="li3">
+						<h3>Flat</h3>
+						<h2>Rs 150 <span>off</span></h2>
+						<p id="p3">FLYMMT150</p>
+						<h4>*Valid On Min 1 Ticket Booking</h4>
+						<button onclick="copyToClipboard('#li3')" data-text-swap="CODE COPIED" name="button">COPY CODE</button>
+					</li>
+					<li id="li4">
+						<h3>Flat</h3>
+						<h2>Rs 2500 <span>off</span></h2>
+						<p id="p4">MMTBEST</p>
+						<button onclick="copyToClipboard('#li4')" data-text-swap="CODE COPIED" name="button">COPY CODE</button>
+					</li>
+				</ul>
+				<div class="close-btn">
+					<img src="assets/img/close.png" alt="" width="16" height="16">
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</html>

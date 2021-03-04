@@ -1,0 +1,372 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background: #8368f5;
+	padding: 30px 0;
+	overflow: hidden;
+
+}
+ul.menu-bar{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+ul.menu-bar li{
+	display: inline-block;
+	font-size: 15px;
+	color: #000;
+	font-weight: 700;
+	font-family: arial;
+	padding: 0 35px;
+}
+ul.menu-bar li a{
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+.hamburger-menu{
+	display: none;
+}
+main{
+	background-image: url(../img/bg-img.jpg);
+	background-size: 100% 100%;
+	padding: 80px 15px 50px 15px;
+	z-index: -1;
+	width: calc(100% - 30px);
+}
+main h1{
+	margin: 0;
+	font-size: 40px;
+	text-align: center;
+	color: #ffffff;
+	font-family: arial;
+}
+main p{
+	margin: 20px auto;
+	max-width: 430px;
+	font-size: 18px;
+	text-align: center;
+	color: #000000;
+	font-family: arial;
+}
+.coming-soon{
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    margin: 20px auto 35px;
+    background-color: #ffffff;
+    font-size: 18px;
+    padding: 10px 0;
+    color: #7a9ee5;
+    font-family: arial;
+    transition-duration: 0.4s;
+    color: black; 
+    border: 2px solid  #7a9ee5;
+    }
+
+.coming-soon:hover {
+  background-color:  #7a9ee5;
+  color: white;
+}
+
+form{
+	background: #8368f5;
+	background: -moz-linear-gradient(left,  #8368f5 1%, #6fe5cf 100%);
+	background: -webkit-linear-gradient(left,  #8368f5 1%,#6fe5cf 100%);
+	background: linear-gradient(to right,  #8368f5 1%,#6fe5cf 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8368f5', endColorstr='#6fe5cf',GradientType=1 );
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 30px;
+}
+form label{
+	width: 100%;
+	display: block;
+	color: #000000;
+	font-size: 15px;
+	font-family: arial;
+	margin: 10px 0;
+}
+form input{
+	width: calc(100% - 20px);
+	display: block;
+	padding: 8px 10px;
+	border-radius: 5px;
+	border: 0;
+}
+form input:focus{
+	outline: 0;
+}
+input[type=submit]{
+	margin: 20px 0 0;
+}
+input[type=radio],.radio label, input[type=date], .birthdate label{
+	display: inline-block;
+	width: auto;
+}
+.pop-up{
+	background-color: #ffffff;
+	padding: 20px;
+	position: fixed;
+	width: calc(100% - 40px);
+	top: 0;
+	right: 0;
+	left: 0;
+	display: none;
+}
+.pop-up h1{
+	font-size: 40px;
+	color: #000000;
+	font-family: arial;
+	margin: 0;
+	text-align: left;
+}
+.pop-up h2{
+	font-size: 20px;
+	color: #4e4c4c;
+	font-family: arial;
+	margin: 0;
+	text-align: left;
+}
+.coupon-code{
+	position: relative;
+}
+ul.offers-code{
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+ul.offers-code li{
+	list-style-type: none;
+	display: inline-block;
+	width: 200px;
+	text-align: left;
+	box-shadow: 0 0 10px #888888;
+	border-radius: 5px;
+	vertical-align: top;
+	min-height: 200px;
+	padding: 20px;
+	margin: 0 15px 20px 0;
+}
+ul.offers-code li h3{
+	text-align: left;
+	margin: 0;
+	font-size: 15px;
+        font-weight: bold;
+        font-family: arial;
+        color: #000000;
+}
+ul.offers-code li h2{
+	text-align: left;
+	margin: 0;
+	font-size: 35px;
+        font-family: arial;
+        color: #000000;
+        line-height: 0.8;
+}
+ul.offers-code li h4{
+	text-align: left;
+	margin: 0;
+	font-size: 11px;
+        font-family: arial;
+        color: #8a8888;
+}
+ul.offers-code li p{
+	text-align: left;
+	margin: 20px 0 5px 0;
+	font-size: 15px;
+        font-weight: bold;
+        font-family: arial;
+        color: #000000;
+}
+
+ul.offers-code li p#p4{
+    margin: 20px 0 16px 0;
+}
+
+ul.offers-code li h2 span{
+	font-size: 17px;
+	vertical-align: middle;
+}
+
+button{
+	margin: 10px 0;
+	border-radius: 25px;
+        width: 140px;
+        padding: 10px 0;
+        border: 0;
+        cursor: pointer;
+	background-color: while;
+	transition-duration: 0.4s;
+	color: black; 
+        border: 2px solid  #4facfb;
+	
+	}
+
+button:hover {
+  background-color:  #4facfb;
+  color: white;
+}
+
+
+
+button:focus{
+	outline: 0;
+}
+
+.close-btn{
+	position: absolute;
+	right: 0px;
+	top: 50px;
+	cursor: pointer;
+}
+
+/*@media only screen and (max-width: 1200px) {
+	ul.menu-bar{
+		max-width: 992px;
+	}
+	ul.menu-bar li{
+		padding: 0 34px;
+	}
+	ul.offers-code li {
+	    width: 165px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	ul.menu-bar{
+		max-width: 768px;
+	}
+	ul.menu-bar li{
+		padding: 0 20px;
+	}
+	.pop-up h1 {
+	    font-size: 35px;
+	}
+	.pop-up h2 {
+	    font-size: 18px;
+	}
+	ul.offers-code li h2 {
+	    font-size: 30px;
+	    line-height: 1;
+	}
+	.close-btn{
+		top: -60px;
+	}
+	ul.offers-code li:last-child{
+		margin: 0 0 20px 0;
+	}
+	ul.offers-code li {
+    	width: 145px;
+    	padding: 10px;
+	}
+	ul.offers-code li h2 {
+    	font-size: 20px;
+    }
+    ul.offers-code li h2 span {
+	    font-size: 15px;
+	    vertical-align: unset;
+	}
+	button {
+    	width: 130px;
+    }
+    ul.offers-code li p#p4 {
+   		margin: 20px 0 28px 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header{
+		padding: 15px 0;
+	}
+	.hamburger-menu{
+		display: none;
+		margin: 0;
+    	padding: 100px 0 50px 0;
+    	position: fixed;
+    	background-color: #70e5d0;
+    	right: 0;
+    	top: 0;
+    	width: 350px;
+    	height: 100%;
+	}
+	ul.hamburger-menubar{
+		margin: 0;
+    	padding: 0;
+    	height: 100%;
+	}
+	ul.hamburger-menubar li{
+		list-style-type: none;
+		padding: 20px 40px;
+	}
+	ul.hamburger-menubar li a{
+		font-size: 20px;
+		color: #000;
+		font-weight: 700;
+		font-family: arial;
+		text-decoration: none;
+	}
+	.humburger-icon{
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		float: right;
+		margin: 0 30px 0 0;
+	}
+	.humburger-icon span{
+		position: absolute;
+		border-top: 5px solid #000000;
+    	width: 100%;
+    	top: 10px;
+	}
+	.humburger-icon span:nth-child(2){
+		top: 20px;
+	}
+	.humburger-icon span:last-child{
+		top: 30px;
+	}
+	.close-hamburger{
+		position: absolute;
+		right: 70px;
+		display: block;
+		top: 60px;
+	}
+	ul.menu-bar{
+		display: none;
+	}
+	ul.offers-code li {
+    	width: 105px;
+    }
+    button {
+    	width: 102px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.humburger-icon span{
+		border-top: 3px solid #000000;
+	}
+	.humburger-icon {
+	    width: 30px;
+	    height: 30px;
+	}
+	ul.hamburger-menubar li a {
+	    font-size: 18px;
+	}
+	ul.offers-code li {
+    	width: 150px;
+    	min-height: 155px;
+	}
+}
+
+@media only screen and (max-width: 414px) {
+	ul.offers-code li {
+    	width: 110px;
+    }
+    ul.offers-code li:nth-child(2){
+    	margin: 0 0 20px 0;
+    }
+
+}
